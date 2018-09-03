@@ -1,6 +1,6 @@
 This project is a coding convention checking tool. Here are the rules and library used:
 
-* Python: rule-[PEP8]https://www.python.org/dev/peps/pep-0008/ lib-[pylint](https://www.pylint.org/#install).
+* Python: rule-[PEP8](https://www.python.org/dev/peps/pep-0008/) lib-[pylint](https://www.pylint.org/#install).
 
 ## Quick Start
 ### Local Test Setup
