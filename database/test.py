@@ -13,14 +13,10 @@ def analyze_file_code_convention(filename=''):
 	'''
 	if util.get_file_extension(filename) == 'py':
 		# python file
-		# TODO ...
-		return ''
-
+		
 
 @app.route('/')
 def index():
-	# test tmp
-	util.py_file_code_convention_analysis('test.py')
 	return render_template('index.html')
 
 

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block extrajs %}
+<script type="text/javascript" src="/static/js/index.js"></script>
+{% endblock%}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+
+<div class="container" align="center">
+  <h2>Please input previous five month saving account balance</h2>          
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Saving Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First Month</td>
+        <td><input type="text" class="form-control" id="1_month"></td>
+      </tr>
+      <tr>
+        <td>Second Month</td>
+        <td><input type="text" class="form-control" id="2_month"></td>
+      </tr>
+      <tr>
+        <td>Third Month</td>
+        <td><input type="text" class="form-control" id="3_month"></td>
+      </tr>
+      <tr>
+        <td>Fourth Month</td>
+        <td><input type="text" class="form-control" id="4_month"></td>
+      </tr>
+      <tr>
+        <td>Fifth Month</td>
+        <td><input type="text" class="form-control" id="5_month"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary" id="submit_button" type="submit">Button</button>
+</div>
+
+<p align="center" style="font-size:36px;color:red;" id='cross_validation'>When you click the submit button, it will take sometime to execute the program. Please be patient</p>
+{% endblock %}
