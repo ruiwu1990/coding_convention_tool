@@ -2,6 +2,7 @@ This project is a coding convention checking tool. Here are the rules and librar
 
 * Python: rule-[PEP8](https://www.python.org/dev/peps/pep-0008/) lib-[pylint](https://www.pylint.org/#install).
 
+Our project also uses [codemirror](https://codemirror.net/) to display codes on the webpage.
 ## Quick Start
 ### Local Test Setup
 To fufil all the requirements for the python server, you need to run:

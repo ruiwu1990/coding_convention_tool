@@ -11,17 +11,40 @@ def analyze_file_code_convention(filename=''):
 	'''
 	This RESTful API analyze file
 	'''
+	# TODO!!!!!!
 	if util.get_file_extension(filename) == 'py':
-		# python file
-		# TODO ...
-		return ''
+		log_path = util.py_file_code_convention_analysis('test.py')
+		fp_log = open(log_path, 'r')
+		content = fp_log.read()
+		fp_log.close()
+		return content
+
+@app.route('/api/analyze_code/<code_type>', methods=['POST','GET'])
+def analyze_code(code_type='py'):
+	'''
+	This RESTful API analyze upload code
+	'''
+	if code_type == 'py':
+		# Post code
+		if request.method == 'POST':
+			filename = 'database/current.py'
+			fp = open(filename, "w")
+			fp.write(request.form['code'])
+			fp.close()
+			return 'Success'
+		# Analysis and GET reviews
+		if request.method == 'GET':
+			filename = 'current.py'
+			reviews = util.py_file_code_convention_analysis(filename)
+			return reviews
 
 
 @app.route('/')
 def index():
 	# test tmp
-	util.py_file_code_convention_analysis('test.py')
-	return render_template('index.html')
+	# log = util.py_file_code_convention_analysis('test.py')
+	log = 'Reviews will be displayed here.'
+	return render_template('index.html', log_html = log)
 
 
 if __name__ == '__main__':
