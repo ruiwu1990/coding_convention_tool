@@ -37,6 +37,19 @@ def analyze_code(code_type='py'):
 			filename = 'current.py'
 			reviews = util.py_file_code_convention_analysis(filename)
 			return reviews
+	if code_type == 'java':
+		# Post code
+		if request.method == 'POST':
+			filename = 'database/current.java'
+			fp = open(filename, "w")
+			fp.write(request.form['code'])
+			fp.close()
+			return 'Success'
+		# Analysis and GET reviews
+		if request.method == 'GET':
+			filename = 'current.java'
+			reviews = util.py_file_code_convention_analysis(filename)
+			return reviews
 
 
 @app.route('/')
