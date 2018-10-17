@@ -1,16 +1,13 @@
-************* Module current
-database/current.py:2:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-database/current.py:4:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-database/current.py:5:0: C0304: Final newline missing (missing-final-newline)
-database/current.py:5:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
-database/current.py:1:0: C0111: Missing module docstring (missing-docstring)
-database/current.py:1:0: C0112: Empty function docstring (empty-docstring)
-database/current.py:4:2: C0103: Variable name "b" doesn't conform to snake_case naming style (invalid-name)
-database/current.py:5:2: C0103: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
-database/current.py:5:6: E0602: Undefined variable 'd' (undefined-variable)
-database/current.py:4:2: W0612: Unused variable 'b' (unused-variable)
-database/current.py:5:2: W0612: Unused variable 'c' (unused-variable)
-
----------------------------------------------------------------------
-Your code has been rated at -40.00/10 (previous run: 5.22/10, -45.22)
-
+Starting audit...
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:3:14: Name 'test' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:4:29: Parameter args should be final. [FinalParameters]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:4:43: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:6:45: '100' is a magic number. [MagicNumber]
+[ERROR] /home/wur18/Desktop/PPSE/coding_convention_tool/database/current.java:7: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 10 errors.
