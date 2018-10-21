@@ -36,7 +36,7 @@ def py_file_code_convention_analysis(filename = 'test.py'):
         check_rule = '/sun_checks.xml'
         command = ['java', '-jar', 'code_analyser/checkstyle-8.12-all.jar', '-c', check_rule, input_file]
     with open(log_path, 'wb') as process_out, open(log_path, 'rb', 1) as reader, open(err_log_path, 'wb') as err_out:
-        process = subprocess.Popen(
+        process = subprocess.Popen( 
             command, stdout=process_out, stderr=err_out, cwd=app_path)
     # wait until the process finishes
     process.wait()

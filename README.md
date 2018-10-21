@@ -19,7 +19,7 @@ sudo pip3 install -r requirements.txt
 ### Docker Setup
 You can run the program by:
 ```
-docker run --name <container_name> -h <IP> -p 5000:5000 ruiwu1990/coding_convention_tool
+docker run --name <container_name> -h <IP> -p 5000:5000 ruiwu1990/coding_convention_tool python cct_main.py
 ```
 
 <IP> should be replaced with your machine ip address. The command is to set up a server with your machine
@@ -27,5 +27,5 @@ docker run --name <container_name> -h <IP> -p 5000:5000 ruiwu1990/coding_convent
 Here is the command that I used:
 
 ```
-docker run --name tmp2 -h 150.216.56.49 -p 5000:5000 ruiwu1990/coding_convention_tool
+docker run --name tmp2 -h 150.216.56.49 -p 5000:5000 ruiwu1990/coding_convention_tool python cct_main.py
 ```
