@@ -8,7 +8,7 @@ RUN apt-get install -y python-pip python-dev build-essential
 #copy source code
 COPY . /programming_checker
 WORKDIR /programming_checker
-ENV PYTHONPATH /var/www/programming_checker
+ENV PYTHONPATH /programming_checker
 
 
 #install requirements
