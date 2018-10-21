@@ -4,4 +4,3 @@ Flask-WTF==0.12
 Jinja2==2.10
 mongoengine==0.10.6
 pathlib
-pylint
