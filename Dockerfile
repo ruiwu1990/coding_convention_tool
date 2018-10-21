@@ -3,7 +3,7 @@ MAINTAINER Rui Wu
 LABEL description="This is for programming style checker."
 
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential pylint
+RUN apt-get install -y python-pip python-dev build-essential
 
 #copy source code
 COPY . /programming_checker
