@@ -8,7 +8,7 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
-RUN apt-get install pylint
+RUN apt-get install -y pylint
 
 
 #copy source code
