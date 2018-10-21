@@ -25,4 +25,4 @@ ENV CHECKER_PORT 80
 ENV CHECKER_HOST 0.0.0.0
 EXPOSE ${CHECKER_PORT}
 
-CMD python views.py -p 5000 --threaded
+CMD python3 cct_main.py -p 5000 --threaded
