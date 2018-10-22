@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:14.04
 MAINTAINER Rui Wu
 LABEL description="This is for programming style checker."
 
