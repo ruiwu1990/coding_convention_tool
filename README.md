@@ -27,6 +27,6 @@ docker run --name <container_name> -h <IP> -p 5000:5000 ruiwu1990/coding_convent
 Here is the command that I used:
 
 ```
-docker run --name tmp2 -h 150.216.56.49 -p 5000:5000 ruiwu1990/coding_convention_tool python cct_main.py
+docker run --name tmp2 -h 150.216.57.36 -p 5000:5000 ruiwu1990/coding_convention_tool python cct_main.py
 ```
 
